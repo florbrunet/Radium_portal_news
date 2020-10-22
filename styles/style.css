@@ -1,0 +1,284 @@
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    }
+
+  h6{
+      text-transform: uppercase;
+    }
+
+  .body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+
+  .container{
+    margin:0 auto;
+    background: #b4b4b4;
+    }
+
+   .containerheader{
+      display: flex;
+      height: 80px;
+      color: black;
+      background: #488a99;
+      padding-top: 10px;
+      margin-bottom: 0px;
+      padding-left:15px;
+      padding-right: 15px;
+      min-height: 100px;
+      border-bottom: lightslategray 3px solid;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+           
+  header a{
+      color:#000;
+      text-decoration:none;
+      text-transform: uppercase;
+      font-size: 17px
+  }
+
+  header ul{
+      margin:0;
+      padding: 0;
+      padding-bottom: 10px;
+ }
+
+  header li{
+    margin:0;
+    padding: 0;
+    display: inline;
+    padding:0 10 20 0; 
+    overflow: hidden;   
+    }
+
+ header a:hover{
+     color: #488a99;
+     font-weight: bold;
+    }
+
+
+.fas.fa-bars {
+    color: black;
+    
+    }
+
+nav{
+    background-color: #DBAE58;
+    width: 100%;
+}
+
+.footer{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background: #488a99;
+      justify-content: space-evenly;
+      padding-top: 0;
+      padding-bottom: 10%;
+      padding-left: 15px;
+      padding-right: 15px; 
+      position: absolute bottom;
+      width: 100%;  
+   }
+
+   
+  .categorias{
+     padding-top: 2px;
+    }
+
+  .footer a{
+    color: black;
+    text-decoration: none;
+    }
+
+   .footer ul{
+       list-style: none;
+       padding-bottom: 0%;
+       margin-top:0%;
+   }
+
+   .footer h4{
+       margin-bottom: 0%;
+   }
+
+    
+  section{
+      width: 100%;
+      height: 800px;
+      background: #c0c0c0;;
+      border: 1px solid #000;
+      /*flexbox*/
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      /*ordenar respescto a sus ejes*/
+      /*justify-content: center;
+       /*generar espacios al costado
+       distribuir los elementos teniendo en cuenta espacios*/
+      justify-content: space-between;
+      /*trabajar con el eje y. Por defecto
+      la propiedad trae el valor strech*/
+      /*align-items: center;/* strech/*flex start o
+      flex end* o center*/
+      }
+
+      .mobile{
+          display:none;
+      }
+
+
+  article{
+      width: 100%;
+      margin-bottom: 30px;
+      padding:15px;
+      border-radius: 10px;
+      background: white;
+  }
+
+
+article img{
+    width: 100%;
+    }
+
+article h2{
+    margin: 8px;
+    }
+
+art1{
+    text-size-adjust: 12;
+}
+
+.art2{
+    flex-grow: 0.9;
+    }
+
+.formulario{
+    display: none;
+    }
+
+
+.bar{
+    display:none;
+}
+
+
+
+
+@media (min-width:426px){
+    section{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 1200px;
+        background: #c0c0c0;;
+        border: 1px solid #000;
+        width: 100%;
+    }
+    article{
+      width: 25%;
+      margin-bottom: 20px;
+      padding:15px;
+      border-radius: 10px;
+      background: white;
+    }
+
+    .formulario{
+        display: inline-block;
+        }
+    
+    
+    .bar{
+        display: inline-block;
+    }
+    
+    .art1{
+        text-size-adjust: 12;
+    }
+
+    /*laptop*/       
+   .footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;  
+      height: auto; 
+      padding-top: 10;
+      padding-bottom:10;
+    }
+
+    .categorias{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+  h6{
+    text-transform:uppercase;
+    font-size: 200%;
+    }
+    
+    }
+
+
+
+/*orden de los elementos*//*
+.art2{
+    /*order: 1* 1 es al final y -1 al principio/
+     /* flex grow*: si hay espacio, quiero que vos
+     elemento con la clase art2 ocupes el 100%
+     de ese espacio en porcentaje por ejemplo 0.5 es 50%
+    flex-grow: 1;*/
+    /*align-self: flex-start;
+}
+
+ /*flexbox
+ query: en cierto tamano de dispositivo o
+ en cierto breakpoint, quiero que se vea
+ en columna y que en dispositivos mas grandes
+ se vean en row)
+
+@media (max-width:500px){
+    section{
+        flex-direction: column;
+    }
+    article{
+        width: 100%;
+    }
+}
+/*
+position: relative (se puede combinar con top, bottom, etc)
+position absolute (referencia desde el body)
+position fixed (podes haces scrool pero sin mover el elemento
+hace referencia al viewport y no al body
+ejemplo: position:fixed, left:5px,etc)
+*/ 
+
+/*z index: el valor z index tiene que venir
+acompanado con un posicionamiento:
+ejemplo> z-index 10 (sin px) position: relative
+
+* Extra small devices (phones, 600px and down) *//*
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) *//*
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) *//*
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) *//*
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*
+@media only screen and (min-width: 1200px) {...}*//*
+
+
+
